@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--write the beginning html set up-->
+<html lang="en">
+    <head>
+        <!--write the meta tags-->
+        <meta charset="UTF-8">
+        <!--link the css file-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond&display=swap" rel="stylesheet">
+        <!--name-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--write the title-->
+        <title>GameScreen</title>
+    </head>
+
+    <body>
+        <section class="boxes container">
+            <article class="box box1">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Coins: <span class="coin-num">0</span></h3>
+                            </td>
+                            <td>
+                                <h3>Prestige: <span class="prestige-num">100</span></h3>
+                            </td>
+                            <td>
+                                <h3>Score: <span class="score-num">0</span></h3>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="pantry">
+                        <table class="pantry-table">
+                            <tr>
+                                <td>
+                                    <img src="images/flour.png" class="ingredient-img flour-img" alt="flour" draggable="false" onclick="selectFlour()">
+                                    <p class="flour-num">10</p>
+                                    <button class="flour-button" onclick="buyFlour()">Buy</button>
+                                    <p>Cost: <span class="flour-cost">10</span></p>
+                                </td>
+                                <td>
+                                    <img src="images/eggs.png" class="ingredient-img eggs-img" alt="eggs" draggable="false" onclick="selectEggs()">
+                                    <p class="eggs-num">10</p>
+                                    <button class="eggs-button" onclick="buyEggs()">Buy</button>
+                                    <p>Cost: <span class="eggs-cost">10</span></p>
+                                </td>
+                                <td>
+                                    <img src="images/milk.png" class="ingredient-img milk-img" alt="milk" draggable="false" onclick="selectMilk()">
+                                    <p class="milk-num">10</p>
+                                    <button class="milk-button" onclick="buyMilk()">Buy</button>
+                                    <p>Cost: <span class="milk-cost">10</span></p>
+                                </td>
+                                <td>
+                                    <img src="images/sugar.png" class="ingredient-img sugar-img" alt="sugar" draggable="false" onclick="selectSugar()">
+                                    <p class="sugar-num">10</p>
+                                    <button class="sugar-button" onclick="buySugar()">Buy</button>
+                                    <p>Cost: <span class="sugar-cost">10</span></p>
+                                </td>
+                                <td>
+                                    <img src="images/fruit.png" class="ingredient-img fruit-img" alt="fruit" draggable="false" onclick="selectFruit()">
+                                    <p class="fruit-num">10</p>
+                                    <button class="fruit-button" onclick="buyFruit()">Buy</button>
+                                    <p>Cost: <span class="fruit-cost">10</span></p>
+                                </td>
+                                <td>
+                                    <img src="images/chocolate-bar.png" class="ingredient-img chocolate-img" alt="chocolate" draggable="false" onclick="selectChocolate()">
+                                    <p class="chocolate-num">10</p>
+                                    <button class="chocolate-button" onclick="buyChocolate()">Buy</button>
+                                    <p>Cost: <span class="chocolate-cost">10</span></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="images/plate.webp" class="plate-img" alt="plate" draggable="false">
+                    </div> 
+            </article>
+
+            <article class="box box2">
+                <div class="calendar">
+                    <table class="calendarTable">
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex1" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex2" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex3" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex4" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex5" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex6" alt="red X" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/realex.png" class="calendar-img ex7" alt="red X" draggable="false">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+
+                <div class="utilities">
+                    <table class="utilities-table" width="400px">
+                        <tr>
+                            <th>
+                                <img src="images/gas.png" id="utility-img0" class="utility-img" alt="fire" draggable="false" onclick="turnonFire()">
+                            </th>
+                            <th>
+                                <img src="images/electricity.png" id="utility-img1" class="utility-img" alt="lightning bolt" draggable="false" onclick="turnonLightning()">
+                            </th>
+                            <th>
+                                <img src="images/water.png" id="utility-img2" class="utility-img" alt="faucet" draggable="false" onclick="turnonFaucet()">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Cost: <span class="fire-cost">10</span></p>
+                                <img src="images/coin-png.webp" class="coin-cost" alt="coin" draggable="false">
+                                
+                            </td>
+                            <td>
+                                <p>Cost: <span class="lightning-cost">10</span></p>
+                                <img src="images/coin-png.webp" class="coin-cost" alt="coin" draggable="false">
+                                
+                            </td>
+                            <td>
+                                <p>Cost: <span class="faucet-cost">10</span></p>
+                                <img src="images/coin-png.webp" class="coin-cost" alt="coin" draggable="false">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
+                
+            </article>
+
+
+            <article class="box box3">
+                <div class="customerWants">
+                    <table class="customerWants-table">
+                        <tr>
+                            <td>
+                                <img src="images/cake.png" class="customerWants-img customer-Wants1" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/hot-cocoa.png" class="customerWants-img customer-Wants2" draggable="false">
+                            </td>
+                            <td>
+                                <img src="images/fruit-tart.png" class="customerWants-img customer-Wants3" draggable="false">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="customers">
+                    <table class="customer-table">
+                        <tr>
+                            <td>
+                                <img src="images/happy-customer1.png" class="cust-img customer-img1" onclick="servefirstCustomer()">
+                                <div class="progress-bar pb1">
+                                    <div class="progress-bar-value">65%</div>
+                                    <div class="progress-bar-fill"></div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <img src="images/happy-customer2.png" class="cust-img customer-img2" onclick="serveCustomer2()">
+                                <div class="progress-bar pb2">
+                                    <div class="progress-bar-value">65%</div>
+                                    <div class="progress-bar-fill"></div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <img src="images/happy-customer3.png" class="cust-img customer-img3" onclick="serveCustomer3()">
+                                <div class="progress-bar pb3">
+                                    <div class="progress-bar-value">65%</div>
+                                    <div class="progress-bar-fill"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="images/witch.webp" class="witch-img" alt="witch" draggable="false">
+                <div class="witch">
+                    <p><span class="witch-dialogue">A witch is rumored to appear offering you some nasty bargains!</span></p>
+                    <button class="accept-button" onclick="onAccept()">Accept</button>
+                    <button class="reject-button" onclick="onDecline()">Reject</button>
+                </div>
+                
+
+            </article>
+
+            <article class="box box4">
+                <div class="fridge">
+                    <h3>Upgrades</h3>
+                    <table class="upgrade-table">
+                        <tr>
+                            <td>
+                                <!--each upgrade-->
+                                <div class="upgrade" onclick="buyUpgrade1()">
+                        
+                                    <div class="left-section">
+                                        <img src="images/faucet.png" class="upgrade-icon" draggable="false">
+                                    </div>
+                        
+                                    <div class="middle-section">
+                                        <h4><span class="upgrade1Title">Upgrade 1</span></h4>
+                                        <div class= "cost-info">
+                                            <p>Cost: <span class="upgrade1-cost">10</span></p>
+                                            <img src="images/coin-png.webp" class="coin-cost" alt="coin" draggable="false">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="right-section">
+                                        <p><span class="upgrade1Description">Buy Now</span></Buy></p>
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <div class="upgrade" onclick="buyUpgrade2()">
+                        
+                                    <div class="left-section">
+                                        <img src="images/faucet.png" class="upgrade-icon" draggable="false">
+                                    </div>
+                        
+                                    <div class="middle-section">
+                                        <h4><span class="upgrade2Title">Upgrade 2</span></h4>
+                                        <div class= "cost-info">
+                                            <p>Cost: <span class="upgrade2-cost">10</span></p>
+                                            <img src="images/coin-png.webp" class="coin-cost" alt="coin" draggable="false">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="right-section">
+                                        <p><span class="upgrade2Description">Buy Now</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="appliances">
+                    <table class="appliances-table">
+                        <img src="images/tipjar.webp" alt="tip jar" class="coin-image" onclick="incrementCoin(tipAdder)" draggable="false">
+                        <img src="images/trashcan.webp" alt="trashcan" class="trash-image" onclick="trashCan()" draggable="false">
+                        <img src="images/oven.png" alt="oven" class="coin-image" onclick="oven()" draggable="false">
+                    </table>
+                </div>
+
+            </article>
+
+
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

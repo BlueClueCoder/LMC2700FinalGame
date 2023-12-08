@@ -1,0 +1,330 @@
+body {
+    user-select: none;
+    height: 100%;
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 0.4fr 0.6fr;
+    grid-gap: 10px;
+    padding-left: 10px;
+}
+
+.box1 {
+    background-color: #FDA1DF;
+}
+
+.box2 {
+    background-color: #770330;
+}
+
+.box3 {
+    background-color: #FA42AD;
+}
+
+.box4 {
+    background-color: #D6056A;
+}
+
+h1, h2, h3 {
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+}
+
+/* stats */
+.box1 h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+/* tip jar */
+.coin-image {
+    width:  100px;
+    height: 100px;
+}
+
+.coin-image:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.coin-image:active {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+/*Upgrades*/
+.fridge h3 {
+    margin-left: 20px;
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+}
+
+.upgrade-table{
+    display: inline;
+    margin-left: 20px;
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 60px;
+    border: 4px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.upgrade:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.upgrade:active {
+    transform: scale(1.2);
+}
+
+
+.middle-section h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.middle-section p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.coin-cost {
+    width: 20px;
+    height: 20px;
+}
+
+.upgrade-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.cost-info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/*Calendar*/
+.calendarTable {
+    border: 4px solid #000;
+    border-radius: 4px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.calendarTable tr:nth-child(2) {
+    height: 50px;
+}
+
+.calendarTable td {
+    border-right: 4px solid #000;
+    padding: 5px;
+    /*make element of each cell in center of cell*/
+    text-align: center;
+}
+.calendarTable th {
+    border-right: 4px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.calendar-img {
+    opacity: 0.0;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*Utilities*/
+.utility-img {
+    width: 60px;
+    height: 60px;
+}
+
+.utility-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.utility-img:active {
+    transform: scale(1.2);
+}
+
+.utilities-table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: 4px solid #000;
+    margin-left:20px;
+    background-color: white;
+}
+
+.utilities-table td {
+    border-right: 4px solid #000;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.utilities th {
+    border-right: 4px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+}
+
+/*Pantry*/
+.plate-img {
+    width: 240px;
+    height: 240px;
+    display: inline;
+    margin-left: 75px;
+}
+
+.pantry table {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+    /*make brown solid border*/
+    border: 4px solid #7B3F00;
+    background-color: #D27D2D;
+    display: inline-block;
+}
+
+.pantry button {
+    background-color: #7B3F00;
+    border: 4px solid #7B3F00;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    display: inline;
+
+}
+
+
+.ingredient-img {
+    width: 60px;
+    height: 60px;
+}
+/*Witch*/
+.witch {
+    border: 4px solid purple;
+    background-color: rgb(153, 96, 157);
+    width: 70%;
+    margin-left: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.witch-img {
+    width: 200px;
+    height: 200px;
+    display: inline;
+}
+
+.witch button {
+    background-color: purple;
+    border: 4px solid purple;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    display: inline;
+}
+
+/*Appliances*/
+.appliances {
+    /*give it space at the top*/
+    padding: 20px;
+}
+
+.trash-image {
+    width: 100px;
+    height: 100px;
+}
+
+.trash-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.trash-image:active {
+    transform: scale(1.2);
+}
+
+/*Customer Wants*/
+.customerWants-img {
+    width: 100px;
+    height: 100px;
+    border:#000 4px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+.customerWants-table {
+    width: 85%;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-collapse: collapse;
+
+}
+
+/*Customers*/
+.customer-table {
+    border-collapse: collapse;
+    width: 85%;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 170px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: rgb(42, 151, 53);
+    transition: width 0.5s;
+}
+
+.progress-bar-value {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*vertical*/
+    align-items: center;
+    /*horizontal*/
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cust-img {
+    width: 80px;
+    height: 80px;
+}

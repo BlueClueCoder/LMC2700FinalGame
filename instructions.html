@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Instructions</title>
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="instructions-style.css">
+  </head>
+  <body>
+    <main>
+      <!-- ***********************  Introduction  *********************** -->
+      <header>
+        <div class="content-wrap">
+            <h1>Sinistea Cafe</h1>
+            <h2>How to Play</h2>
+
+            <p>You did it! You quit your office job and pursued your life long dream of opening a cafe.</p>
+            <p>Running this place is no easy task however, and there's talk of a mischevious witch running around town.</p>
+            <p>Below are all the instructions you'll need to make sure you keep your dream a reality!</p>
+        </div>
+      </header>
+
+      <!-- ********************  Serving ********************* -->
+      <section class="serving">
+        <div class="content-wrap divider">
+            <h2>Serving Customers</h2>
+            <p>The main way you make money and score points in this game is by serving customers</p>
+
+            <!-- Copy the whole <section> block. -->
+            <section class="serving-item">
+                <img src="images/happy-customer1.png" alt="description of image">
+                <h3>Taking Orders</h3>
+                <p>The image above each customer shows what they want to eat.  The percentage bar beneath each customer shows how much time you have left to prepare the dish.</p>
+                <p>If time runs out before you complete the order, the customer leaves and your prestige is reduced.</p>
+            </section>
+            <!-- End of section block. -->
+            <section class="serving-item prep-order">
+                <h3>Preparing Order</h3>
+                <p>To create a dish, click on the three ingredients required to create the dish.  The order of selected ingredients doesn't matter.</p>
+                <table class="menu-table">
+                    <tr>
+                        <th>Dish</th>
+                        <th>Ingredients</th>
+                    </tr>
+                    <tr>
+                        <td>Cookie</td>
+                        <td>Eggs + Flour + Chocolate</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Cocoa</td>
+                        <td>Sugar + Chocolate + Milk</td>
+                    </tr>
+                    <tr>
+                        <td>Fruit Tart</td>
+                        <td>Fruit + Milk + Sugar</td>
+                    </tr>
+                    <tr>
+                        <td>Strawberry Cake</td>
+                        <td>Flour + Milk + Fruit</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="serving-item">
+                <img src="images/oven.png" alt="oven">
+                <h3>Completing Order</h3>
+                <p>Once you've selected all 3 ingredients, click the oven icon.  If you've selected the correct combination of items, the empty plate will switch to whichever dish you created.</p>
+                <p>Now click on the customer who wanted that dish.  They will disappear from the line, and your score, prestige, and coins will increase.</p>
+                <p>If you messed up the order, clicking the <strong>Trashcan</strong> will deselect any selected ingredients and clear the plate if you completed a recipe.</p>
+            </section>
+
+
+          </div>
+      </section>
+
+      <!-- ***********************  Upkeep  *********************** -->
+      <section class="upkeep">
+        <div class="content-wrap divider">
+            <h2>Upkeep</h2>
+            <p>No one said this would be easy.  Running a cafe is hard enough, but now you've also got bills, inventory, and repairs to keep up with!</p>
+            
+
+            <section class="serving-item">
+                <img src="images/electricity.png" alt="description of image">
+                <h3>Utilities</h3>
+                <p>At the end of every week, there is a chance one of your utilities (gas, electricity, plumbing) shuts off, and it's your job to turn it back on by paying the bill.</p>
+                <p>If you ever finish a full week with no utilities active, your cafe is closed for repair, and you lose the game.</p>
+                <p>To turn a utility back on, just click on the faded icon.  If you have enough money to pay for it, it will turn back on and your cafe will stay in business!</p>
+            </section>
+
+            <section class="serving-item">
+                <img src="images/faucet.png" alt="description of image">
+                <h3>Upgrades</h3>
+                <p>Having just opened, your cafe could still use some work.  The two upgrade options found in the bottom right corner can be purchased at any point.</p>
+                <p>These upgrades provide you with a little context about what part of your cafe they'll improve, but they also come with drawbacks!</p>
+                <p>Whenever you purchase an upgrade, it will be swapped out with a new one for you to consider.</p>
+            </section>
+
+            <section class="serving-item">
+                <img src="images/flour.png" alt="pantry">
+                <h3>Restocking</h3>
+                <p>After taking so many orders, you will start running low on ingredients.  There's an easy fix to this!</p>
+                <p>At any point, you can click the "Buy" button beneath an ingredient to fully restock it to its maximum capacity.</p>
+            </section>
+            
+          </div>
+      </section>
+
+      <!-- ****************** Attributes ****************** -->
+      <section class="miscellaneous">
+        <div class="content-wrap divider">
+        <h2>Miscellaneous</h2>
+        <p>Just a few more things to know before you begin your career as a cafe owner.</p>
+        
+        <section class="serving-item">
+            <img src="images/witch.webp" alt="description of image">
+            <h3>The Witch</h3>
+            <p>Throughout your game, there is a chance that a witch enters your shop and offers you a deal.</p>
+            <p>She will explain the possible consequences of her spells, but it's up to you to decide if you can take the risk.</p>
+            <p>You can refuse her offers with no consequences.  If you accept, she will tell you the effects of her spell.  The witch will not offer you another spell until you either accept or refuse her current offer.</p>
+        </section>
+
+        <section class="serving-item">
+            <img src="images/cake.png" alt="player's stats">
+            <h3>Stats</h3>
+            <p>This game handles lots of variables, so it's best if you understand what each of them means.</p>
+            <p>Score: This is what you look at between playthroughs of this game to see how you did.  Buying upgrades and serving customers increases it.</p>
+            <p>Prestige: Keep this value as high as you can.  Serving customers increases it, but failing to serve a customer lowers your prestige.  If prestige hits 0, your cafe closes!</p>
+            <p>Coins: This is how you pay for upgrades, utilities, and restocking ingredients.  Serving customers gains you coins.</p>
+        </section>
+
+        <section class="serving-item">
+            <img src="images/tipjar.webp" alt="description of image">
+            <h3>Tip Jar</h3>
+            <p>If you're ever short on funds, you can take from the tip jar.</p>
+            <p>Click the Tip Jar icon to immediately gain money.  There is no limit to the number of times you can do this.</p>
+        </section>
+
+        </div>
+      </section>
+
+      <!-- *****************  Return to Home  ***************** -->
+      <footer>
+        <div class="content-wrap">
+        <h2>And That's It!</h2>
+        <p>Now that you know how to play, you're ready to open your cafe!</p>
+        <br/>
+        <a href="index.html" class="return-btn">Return to Home Page</a></li>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

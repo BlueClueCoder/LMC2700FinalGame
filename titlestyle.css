@@ -1,0 +1,75 @@
+
+body {
+    height: 100%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 5fr 1.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.title {
+    background-color: #D6056A;
+    font-family:'Lily Script One', cursive;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.bgpic {
+    background-image: url("images/titleBackground.png");
+    /*fit the image to the row*/
+    background-size: cover;
+    /*center the image*/
+    background-position: center;
+}
+
+.buttons {
+    background-color: #FDA1DF;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    font-family:'Lily Script One', cursive;
+    font-size: 30px;
+}
+
+.buttons table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.howtoplay-btn{
+    padding: 20px;
+    background-color: #D6056A;
+    border: 4px solid white;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-family:'Lily Script One', cursive;
+    display: inline;
+}
+
+.howtoplay-btn:hover{
+    opacity: 0.9;
+}
+
+.begin-btn{
+    padding: 20px;
+    background-color: #D6056A;
+    border: 4px solid white;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-family:'Lily Script One', cursive;
+    display: inline;
+}
+
+.begin-btn:hover{
+    opacity: 0.9;
+}

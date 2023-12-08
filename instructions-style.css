@@ -1,0 +1,198 @@
+/*color pallette
+----------------
+#D6056A: raspberry
+#FDA1DF: bubblegum
+#770330: wine
+#FA42AD: hot pink
+#19010B: rich blackberry
+*/
+
+/*Global qualities
+--------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #010B13;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #FFB30F;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+}
+
+.content-wrap{
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.divider > section {
+    border-bottom: 3px dashed #19010B;
+    padding: 25px 0;
+    
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;   
+}
+
+/*Overview
+--------------------*/
+header {
+    background: #D6056A;
+    color: #F7FFF7;
+    
+}
+
+/*Serving Customers
+--------------------*/
+.serving {
+    background: #FDA1DF;
+}
+
+.serving-item {
+    overflow: hidden;
+}
+
+.serving-item h3 {
+    margin-top: 0;
+}
+
+.serving-item img {
+    float: left;
+    margin-right: 20px;
+    height: 20%;
+    width: 20%;
+}
+
+.menu-table{
+    border: solid 4px #19010B;
+    text-align: center;
+    /*make the table fit the content*/
+    width: 100%;
+}
+
+.menu-table td, .menu-table th {
+    border-right: 2px solid #19010B;
+    border-bottom: #19010B 2px solid;
+}
+
+.menu-table th {
+    font-size: 20px;
+}
+
+/*Upkeep
+--------------------*/
+.upkeep {
+    background: #D6056A;
+    color: white;
+}
+
+/*Miscellaneous
+--------------------*/
+.miscellaneous {
+    background: #FA42AD;
+}
+
+/*Return to Main Menu
+--------------------*/
+footer {
+    background: #19010B;
+    color: #FFFFFF;
+}
+
+.return-btn {
+    padding: 10px;
+    background-color: #D6056A;
+    border: 3px solid white;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    display: inline;
+}
+
+.return-btn:hover {
+    opacity: 0.9;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*Responses
+---------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+    }
+    
+    h2 {
+        line-height: 1;
+    }
+    
+    .contact-list a {
+        padding: 5px;
+    }
+}
